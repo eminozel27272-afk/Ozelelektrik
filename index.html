@@ -1,0 +1,1172 @@
+```html
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Özel Elektrik ⚡ | Gaziantep Elektrikçi</title>
+
+  <meta name="description"
+  content="Özel Elektrik - Gaziantep elektrik, LED, spot, avize, priz ve anahtar montaj hizmetleri.">
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #080808;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ================= HEADER ================= */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+
+      background: rgba(8,8,8,.85);
+      backdrop-filter: blur(15px);
+
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+
+      height: 75px;
+      padding: 0 25px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+
+    .logo span {
+      color: #ffd400;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: #ddd;
+      font-size: 14px;
+      font-weight: 600;
+      transition: .2s;
+    }
+
+    .nav-links a:hover {
+      color: #ffd400;
+    }
+
+    .nav-button {
+      background: #ffd400;
+      color: #000;
+
+      padding: 11px 18px;
+      border-radius: 8px;
+
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+      min-height: 100vh;
+
+      display: flex;
+      align-items: center;
+
+      padding: 130px 25px 80px;
+
+      position: relative;
+      overflow: hidden;
+
+      background:
+      radial-gradient(circle at 80% 30%, rgba(255,212,0,.13), transparent 30%),
+      radial-gradient(circle at 20% 70%, rgba(255,212,0,.06), transparent 30%),
+      #080808;
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+    }
+
+    .badge {
+      display: inline-block;
+
+      padding: 8px 14px;
+
+      border: 1px solid rgba(255,212,0,.35);
+      background: rgba(255,212,0,.08);
+
+      color: #ffd400;
+
+      border-radius: 50px;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 8vw, 88px);
+      line-height: .95;
+
+      max-width: 850px;
+
+      letter-spacing: -4px;
+
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: #ffd400;
+    }
+
+    .hero-text {
+      max-width: 650px;
+
+      color: #aaa;
+
+      font-size: 18px;
+      line-height: 1.7;
+
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      padding: 16px 24px;
+
+      border-radius: 9px;
+
+      font-weight: 800;
+
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      transition: .25s;
+    }
+
+    .button-yellow {
+      background: #ffd400;
+      color: #000;
+    }
+
+    .button-dark {
+      border: 1px solid #333;
+      background: #111;
+      color: #fff;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+    }
+
+    /* ================= STATS ================= */
+
+    .stats {
+      max-width: 1200px;
+
+      margin: -40px auto 0;
+
+      padding: 0 25px;
+
+      position: relative;
+      z-index: 5;
+    }
+
+    .stats-box {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+
+      background: #111;
+
+      border: 1px solid #242424;
+
+      border-radius: 16px;
+
+      overflow: hidden;
+    }
+
+    .stat {
+      padding: 30px;
+
+      text-align: center;
+
+      border-right: 1px solid #242424;
+    }
+
+    .stat:last-child {
+      border: 0;
+    }
+
+    .stat strong {
+      display: block;
+
+      color: #ffd400;
+
+      font-size: 27px;
+
+      margin-bottom: 5px;
+    }
+
+    .stat span {
+      color: #999;
+      font-size: 13px;
+    }
+
+    /* ================= GENERAL ================= */
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+
+      padding: 110px 25px;
+    }
+
+    .section-label {
+      color: #ffd400;
+
+      font-size: 13px;
+
+      font-weight: 800;
+
+      text-transform: uppercase;
+
+      letter-spacing: 2px;
+
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(32px,5vw,52px);
+
+      letter-spacing: -2px;
+
+      margin-bottom: 15px;
+    }
+
+    .section-description {
+      color: #888;
+
+      max-width: 600px;
+
+      line-height: 1.7;
+
+      margin-bottom: 45px;
+    }
+
+    /* ================= SERVICES ================= */
+
+    .services {
+      display: grid;
+
+      grid-template-columns: repeat(3,1fr);
+
+      gap: 18px;
+    }
+
+    .service {
+      background: linear-gradient(145deg,#151515,#0e0e0e);
+
+      border: 1px solid #242424;
+
+      border-radius: 16px;
+
+      padding: 30px;
+
+      transition: .3s;
+    }
+
+    .service:hover {
+      transform: translateY(-6px);
+
+      border-color: rgba(255,212,0,.5);
+    }
+
+    .service-icon {
+      width: 55px;
+      height: 55px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: rgba(255,212,0,.1);
+
+      border-radius: 12px;
+
+      font-size: 25px;
+
+      margin-bottom: 25px;
+    }
+
+    .service h3 {
+      font-size: 20px;
+
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      color: #888;
+
+      line-height: 1.6;
+
+      font-size: 14px;
+    }
+
+    /* ================= WHY US ================= */
+
+    .why {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 50px;
+
+      align-items: center;
+    }
+
+    .why-box {
+      display: grid;
+
+      gap: 15px;
+    }
+
+    .why-item {
+      padding: 22px;
+
+      background: #111;
+
+      border: 1px solid #222;
+
+      border-radius: 13px;
+
+      display: flex;
+
+      gap: 15px;
+
+      align-items: center;
+    }
+
+    .why-icon {
+      width: 42px;
+      height: 42px;
+
+      flex-shrink: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: #ffd400;
+
+      color: #000;
+
+      border-radius: 10px;
+
+      font-weight: 900;
+    }
+
+    .why-item h3 {
+      font-size: 16px;
+
+      margin-bottom: 4px;
+    }
+
+    .why-item p {
+      color: #777;
+
+      font-size: 13px;
+    }
+
+    /* ================= GALLERY ================= */
+
+    .gallery {
+      display: grid;
+
+      grid-template-columns: repeat(3,1fr);
+
+      gap: 15px;
+    }
+
+    .gallery-item {
+      height: 240px;
+
+      background:
+      linear-gradient(135deg,#191919,#0e0e0e);
+
+      border: 1px solid #252525;
+
+      border-radius: 15px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+
+      color: #666;
+
+      overflow: hidden;
+    }
+
+    .gallery-item span {
+      font-size: 45px;
+    }
+
+    /* ================= CTA ================= */
+
+    .cta {
+      margin: 20px 25px 100px;
+
+      max-width: 1150px;
+
+      padding: 70px 35px;
+
+      margin-left: auto;
+      margin-right: auto;
+
+      text-align: center;
+
+      border-radius: 22px;
+
+      background:
+      radial-gradient(circle at center,rgba(255,212,0,.16),transparent 60%),
+      #111;
+
+      border: 1px solid #292929;
+    }
+
+    .cta h2 {
+      font-size: clamp(30px,5vw,52px);
+
+      letter-spacing: -2px;
+
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #888;
+
+      margin-bottom: 30px;
+    }
+
+    /* ================= CONTACT ================= */
+
+    .contact {
+      text-align: center;
+    }
+
+    .phone {
+      display: inline-block;
+
+      font-size: clamp(28px,5vw,45px);
+
+      font-weight: 900;
+
+      color: #ffd400;
+
+      margin: 15px 0 30px;
+    }
+
+    .location {
+      color: #888;
+
+      margin-top: 20px;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      border-top: 1px solid #222;
+
+      padding: 35px 25px;
+
+      text-align: center;
+
+      color: #666;
+
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: #ffd400;
+    }
+
+    /* ================= WHATSAPP ================= */
+
+    .whatsapp {
+      position: fixed;
+
+      right: 20px;
+      bottom: 20px;
+
+      z-index: 2000;
+
+      width: 58px;
+      height: 58px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background: #25D366;
+
+      font-size: 27px;
+
+      box-shadow: 0 8px 30px rgba(0,0,0,.5);
+
+      transition: .25s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+    /* ================= MOBILE ================= */
+
+    @media(max-width:800px) {
+
+      .nav {
+        height: 65px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .nav-button {
+        display: block;
+      }
+
+      .hero {
+        padding-top: 120px;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .hero-text {
+        font-size: 16px;
+      }
+
+      .stats-box {
+        grid-template-columns: 1fr;
+      }
+
+      .stat {
+        border-right: 0;
+        border-bottom: 1px solid #242424;
+      }
+
+      .stat:last-child {
+        border-bottom: 0;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      .why {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gallery-item {
+        height: 180px;
+      }
+
+    }
+
+    @media(max-width:500px) {
+
+      .logo {
+        font-size: 19px;
+      }
+
+      .nav-button {
+        padding: 9px 12px;
+        font-size: 11px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .button {
+        justify-content: center;
+      }
+
+      section {
+        padding: 80px 20px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item {
+        height: 220px;
+      }
+
+      .cta {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+  <nav class="nav">
+
+    <a href="#" class="logo">
+      ÖZEL <span>ELEKTRİK</span> ⚡
+    </a>
+
+    <div class="nav-links">
+
+      <a href="#hizmetler">Hizmetler</a>
+
+      <a href="#neden">Neden Biz?</a>
+
+      <a href="#iletisim">İletişim</a>
+
+    </div>
+
+    <a
+      class="nav-button"
+      href="tel:+905518335275">
+
+      📞 Ara
+
+    </a>
+
+  </nav>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="badge">
+      ⚡ GAZİANTEP ELEKTRİK HİZMETLERİ
+    </div>
+
+    <h1>
+      Elektrikte<br>
+      <span>Güvenilir Çözüm.</span>
+    </h1>
+
+    <p class="hero-text">
+      LED, avize, spot, priz, anahtar ve çeşitli
+      elektrik montaj işleriniz için özenli ve
+      profesyonel hizmet.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a
+        class="button button-yellow"
+        href="https://wa.me/905518335275"
+        target="_blank">
+
+        💬 WhatsApp'tan Teklif Al
+
+      </a>
+
+      <a
+        class="button button-dark"
+        href="#hizmetler">
+
+        Hizmetlerimizi Gör →
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ================= STATS ================= -->
+
+<div class="stats">
+
+  <div class="stats-box">
+
+    <div class="stat">
+
+      <strong>⚡</strong>
+
+      <span>
+        Elektrik Hizmetleri
+      </span>
+
+    </div>
+
+    <div class="stat">
+
+      <strong>💡</strong>
+
+      <span>
+        LED & Aydınlatma
+      </span>
+
+    </div>
+
+    <div class="stat">
+
+      <strong>📍</strong>
+
+      <span>
+        Gaziantep
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="hizmetler">
+
+  <div class="section-label">
+    Hizmetlerimiz
+  </div>
+
+  <h2 class="section-title">
+    İhtiyacınız olan<br>
+    <span style="color:#ffd400;">
+      elektrik hizmetleri.
+    </span>
+  </h2>
+
+  <p class="section-description">
+    Ev ve iş yerlerinde elektrik ve aydınlatma
+    ihtiyaçlarınız için çeşitli montaj hizmetleri
+    sunuyoruz.
+  </p>
+
+
+  <div class="services">
+
+
+    <div class="service">
+
+      <div class="service-icon">
+        💡
+      </div>
+
+      <h3>LED Aydınlatma</h3>
+
+      <p>
+        LED şerit, LED panel ve dekoratif
+        aydınlatma uygulamalarının montajı.
+      </p>
+
+    </div>
+
+
+    <div class="service">
+
+      <div class="service-icon">
+        ✨
+      </div>
+
+      <h3>Avize Montajı</h3>
+
+      <p>
+        Avize ve dekoratif aydınlatmaların
+        özenli montaj işlemleri.
+      </p>
+
+    </div>
+
+
+    <div class="service">
+
+      <div class="service-icon">
+        🔦
+      </div>
+
+      <h3>Spot Montajı</h3>
+
+      <p>
+        Tavan spotları ve dekoratif spot
+        aydınlatma uygulamaları.
+      </p>
+
+    </div>
+
+
+    <div class="service">
+
+      <div class="service-icon">
+        🔘
+      </div>
+
+      <h3>Priz & Anahtar</h3>
+
+      <p>
+        Priz, anahtar ve düğme montajı
+        ve değişimi.
+      </p>
+
+    </div>
+
+
+    <div class="service">
+
+      <div class="service-icon">
+        ⚡
+      </div>
+
+      <h3>Elektrik Montajı</h3>
+
+      <p>
+        Ev ve iş yerleri için çeşitli
+        elektrik montaj uygulamaları.
+      </p>
+
+    </div>
+
+
+    <div class="service">
+
+      <div class="service-icon">
+        🏠
+      </div>
+
+      <h3>Ev Elektriği</h3>
+
+      <p>
+        Evlerde ihtiyaç duyulan elektrik
+        ve aydınlatma işleri.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- ================= WHY ================= -->
+
+<section id="neden">
+
+  <div class="why">
+
+    <div>
+
+      <div class="section-label">
+        Neden Özel Elektrik?
+      </div>
+
+      <h2 class="section-title">
+        İşimizi<br>
+        <span style="color:#ffd400;">
+          özenle yapıyoruz.
+        </span>
+      </h2>
+
+      <p class="section-description">
+        Her işte temiz görünüm, güvenli montaj
+        ve müşteri memnuniyetini ön planda
+        tutuyoruz.
+      </p>
+
+    </div>
+
+
+    <div class="why-box">
+
+
+      <div class="why-item">
+
+        <div class="why-icon">
+          ✓
+        </div>
+
+        <div>
+
+          <h3>Özenli İşçilik</h3>
+
+          <p>
+            Detaylara dikkat ederek çalışıyoruz.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="why-item">
+
+        <div class="why-icon">
+          ✓
+        </div>
+
+        <div>
+
+          <h3>Temiz Montaj</h3>
+
+          <p>
+            İşimizi düzenli ve temiz şekilde
+            tamamlamaya önem veriyoruz.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="why-item">
+
+        <div class="why-icon">
+          ✓
+        </div>
+
+        <div>
+
+          <h3>Güvenilir Hizmet</h3>
+
+          <p>
+            Müşterilerimizle açık iletişim
+            kuruyoruz.
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ================= GALLERY ================= -->
+
+<section>
+
+  <div class="section-label">
+    Çalışmalarımız
+  </div>
+
+  <h2 class="section-title">
+    Yaptığımız işler.
+  </h2>
+
+  <p class="section-description">
+    Buraya ilerleyen zamanda gerçek işlerinizin
+    fotoğraflarını ekleyebiliriz.
+  </p>
+
+
+  <div class="gallery">
+
+    <div class="gallery-item">
+      <div>
+        <span>💡</span>
+        <br>
+        LED Uygulaması
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <div>
+        <span>✨</span>
+        <br>
+        Avize Montajı
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <div>
+        <span>🔦</span>
+        <br>
+        Spot Uygulaması
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ================= CTA ================= -->
+
+<div class="cta">
+
+  <h2>
+    Elektrik işiniz mi var?
+  </h2>
+
+  <p>
+    Yapılacak işi konuşmak için bize ulaşın.
+  </p>
+
+  <a
+    class="button button-yellow"
+    href="https://wa.me/905518335275"
+    target="_blank">
+
+    💬 WhatsApp'tan İletişime Geç
+
+  </a>
+
+</div>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="iletisim">
+
+  <div class="contact">
+
+    <div class="section-label">
+      İletişim
+    </div>
+
+    <h2 class="section-title">
+      Bize ulaşın.
+    </h2>
+
+    <div class="phone">
+      0551 833 52 75
+    </div>
+
+    <br>
+
+    <a
+      class="button button-yellow"
+      href="tel:+905518335275">
+
+      📞 Hemen Ara
+
+    </a>
+
+    <p class="location">
+      📍 Gaziantep
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <strong>ÖZEL ELEKTRİK ⚡</strong>
+
+  <br><br>
+
+  Gaziantep Elektrik & Aydınlatma Hizmetleri
+
+  <br><br>
+
+  © 2026 Özel Elektrik. Tüm hakları saklıdır.
+
+</footer>
+
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+  class="whatsapp"
+  href="https://wa.me/905518335275"
+  target="_blank"
+  aria-label="WhatsApp">
+
+  💬
+
+</a>
+
+
+</body>
+</html>
+```
